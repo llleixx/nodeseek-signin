@@ -27,6 +27,7 @@ jobs:
       - name: signin
         run: 
           OUTPUT=$(./signin.sh)
+          echo $OUTPUT
           echo "OUTPUT=$OUTPUT" >> $GITHUB_ENV
     
       - name: Send mail
