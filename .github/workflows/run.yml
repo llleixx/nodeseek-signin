@@ -25,7 +25,7 @@ jobs:
         run: chmod +x signin.sh
       
       - name: signin
-        run: 
+        run: |
           OUTPUT=$(./signin.sh)
           echo $OUTPUT
           echo "OUTPUT=$OUTPUT" >> $GITHUB_ENV
